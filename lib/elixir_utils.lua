@@ -38,8 +38,16 @@ function elixir_utils.windows_install_exe(version)
         local asset_name = string.gsub(version, "^main%-latest%-", "")
         download_url = "https://github.com/elixir-lang/elixir/releases/download/main-latest/" .. asset_name .. ".exe"
     else
-        local elixir_version = string.gsub(version, "-", "/", 1)
-        download_url = "https://github.com/elixir-lang/elixir/releases/download/v" .. elixir_version .. ".exe"
+        -- Pattern matches everything before '-elixir-otp-' as the tag, and the rest as the asset
+        local tag_version, asset_name = string.match(version, "^(.*)%-(elixir%-otp%-.*)$")
+
+        if tag_version and asset_name then
+            download_url = "https://github.com/elixir-lang/elixir/releases/download/v" ..
+                tag_version .. "/" .. asset_name .. ".exe"
+        else
+            local elixir_version = string.gsub(version, "-", "/", 1)
+            download_url = "https://github.com/elixir-lang/elixir/releases/download/v" .. elixir_version .. ".exe"
+        end
     end
 
     -- download
