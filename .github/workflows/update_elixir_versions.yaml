@@ -1,0 +1,44 @@
+# for vfox search
+name: update_elixir_versions
+
+on:
+  schedule:
+    - cron: "0 16 * * 2"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update_elixir_versions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.13
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13' 
+
+      - name: Update version file
+        run: |
+          cd assets
+          python -m pip install requests packaging
+          python get_all_elixir_versions.py
+          python get_all_elixir_win_versions.py
+
+      - name: Push updated version file
+        run: |
+          pwd
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"github-actions[bot]
+          if [[ -n $(git status -s) ]]; then
+            git add .
+            git commit -m "chore(versions.txt): update Elixir version file"
+            git push https://github-actions[bot]:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+            curl https://purge.jsdelivr.net/gh/knevan/vfox-elixir@main/assets/versions.txt
+            curl https://purge.jsdelivr.net/gh/knevan/vfox-elixir@main/assets/versions_win.txt
+            echo "refreshed jsdelivr cache."
+          else
+            echo "never updated."
+          fi
