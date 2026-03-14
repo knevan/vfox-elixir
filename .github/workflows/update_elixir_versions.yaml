@@ -3,7 +3,7 @@ name: update_elixir_versions
 
 on:
   schedule:
-    - cron: "0 16 * * 2"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
