@@ -2,6 +2,9 @@ main-latest-elixir-otp-29
 main-latest-elixir-otp-28
 main-latest-elixir-otp-27
 main-latest-elixir-otp-26
+1.20.0-rc.6-elixir-otp-29
+1.20.0-rc.6-elixir-otp-28
+1.20.0-rc.6-elixir-otp-27
 1.20.0-rc.5-elixir-otp-29
 1.20.0-rc.5-elixir-otp-28
 1.20.0-rc.5-elixir-otp-27
@@ -130,6 +133,9 @@ main-latest-elixir-otp-26
 1.15.0-rc.2-elixir-otp-26
 1.15.0-rc.2-elixir-otp-25
 1.15.0-rc.2-elixir-otp-24
+1.20-latest-elixir-otp-29
+1.20-latest-elixir-otp-28
+1.20-latest-elixir-otp-27
 1.19-latest-elixir-otp-28
 1.19-latest-elixir-otp-27
 1.19-latest-elixir-otp-26
