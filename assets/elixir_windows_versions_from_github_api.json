@@ -36,42 +36,6 @@
         ]
     },
     {
-        "id": 189966142,
-        "tag_name": "v1.18-latest",
-        "target_commitish": "main",
-        "name": "v1.18-latest",
-        "prerelease": false,
-        "published_at": "2024-12-10T14:02:17Z",
-        "tarball_url": "https://api.github.com/repos/elixir-lang/elixir/tarball/v1.18-latest",
-        "zipball_url": "https://api.github.com/repos/elixir-lang/elixir/zipball/v1.18-latest",
-        "assets": [
-            {
-                "name": "elixir-otp-25.exe",
-                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-25.exe"
-            },
-            {
-                "name": "elixir-otp-25.zip",
-                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-25.zip"
-            },
-            {
-                "name": "elixir-otp-26.exe",
-                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-26.exe"
-            },
-            {
-                "name": "elixir-otp-26.zip",
-                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-26.zip"
-            },
-            {
-                "name": "elixir-otp-27.exe",
-                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-27.exe"
-            },
-            {
-                "name": "elixir-otp-27.zip",
-                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-27.zip"
-            }
-        ]
-    },
-    {
         "id": 175382761,
         "tag_name": "main-latest",
         "target_commitish": "main",
@@ -112,6 +76,42 @@
             {
                 "name": "elixir-otp-29.zip",
                 "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/main-latest/elixir-otp-29.zip"
+            }
+        ]
+    },
+    {
+        "id": 189966142,
+        "tag_name": "v1.18-latest",
+        "target_commitish": "main",
+        "name": "v1.18-latest",
+        "prerelease": false,
+        "published_at": "2024-12-10T14:02:17Z",
+        "tarball_url": "https://api.github.com/repos/elixir-lang/elixir/tarball/v1.18-latest",
+        "zipball_url": "https://api.github.com/repos/elixir-lang/elixir/zipball/v1.18-latest",
+        "assets": [
+            {
+                "name": "elixir-otp-25.exe",
+                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-25.exe"
+            },
+            {
+                "name": "elixir-otp-25.zip",
+                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-25.zip"
+            },
+            {
+                "name": "elixir-otp-26.exe",
+                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-26.exe"
+            },
+            {
+                "name": "elixir-otp-26.zip",
+                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-26.zip"
+            },
+            {
+                "name": "elixir-otp-27.exe",
+                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-27.exe"
+            },
+            {
+                "name": "elixir-otp-27.zip",
+                "browser_download_url": "https://github.com/elixir-lang/elixir/releases/download/v1.18-latest/elixir-otp-27.zip"
             }
         ]
     },
